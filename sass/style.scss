@@ -16,8 +16,7 @@ body {
 }
 
 h1 {
-    font-style: italic;
-    font-weight: bold;
+    font-family: $logo-font, sans-serif;
 }
 
 footer {
@@ -30,6 +29,7 @@ footer {
 
     & p {
         padding: 20px;
+        font-family: $logo-font, sans-serif;
     }
 
     & a {
