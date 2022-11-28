@@ -7,14 +7,43 @@
 body {
   max-width: 762px;
   margin: auto;
-  display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
+  margin: 10px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav {
+  padding: 25px;
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.location {
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 7px 9px -7px #aaaaaa;
 }
 
 footer {
