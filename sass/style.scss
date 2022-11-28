@@ -30,6 +30,17 @@ nav {
     text-align: center;
 }
 
+.button {
+    @include rounded-with-shadow;
+    background: linear-gradient(-10deg, $primary-color, $secondary-color);
+    color: $inverted-police;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    margin: 30px;
+}
+
 .location {
     background-color: darken($grey, 4.8%);
     width: 100%;
@@ -37,6 +48,40 @@ nav {
     text-align: center;
     @include flex-center;
     box-shadow: inset 0 7px 9px -7px darken($grey, 30%);
+}
+
+.functionning {
+    @include flex-center;
+    width: 90%;
+
+    &__card {
+        @include flex-center;
+        @include rounded-with-shadow;
+        background: $grey;
+        height: 72px;
+        padding: 0 30px;
+        margin: 20px;
+
+        &__number {
+            position: relative;
+            right: 35px;
+        }
+
+    }
+}
+
+.restaurants {
+    &__card {
+        @include rounded-with-shadow;
+
+        & img {
+            border-radius: 25px 25px 0 0;
+        }
+
+        &__informations {
+            display: flex;
+        }
+    }
 }
 
 footer {
