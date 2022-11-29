@@ -1,6 +1,7 @@
 @import 'Utils/variables';
 @import 'Base/reset';
 @import 'Utils/mixin';
+@import 'Layout/layout';
 
 
 body {
@@ -11,10 +12,7 @@ body {
     @include flex-center
 }
 
-h1 {
-    font-family: $logo-font, sans-serif;
-    margin: 10px;
-}
+
 
 h2 {
     font-weight: $bold-weight;
@@ -79,7 +77,7 @@ nav {
 
         & h3 {
             font-size: $small-font;
-            font-weight: $regular-font;
+            font-weight: $regular-weight;
             min-width: 85%;
         }
 
@@ -125,27 +123,18 @@ main {
     }
 }
 
-footer {
-    width: $full-width;
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    color: $inverted-police;
-    padding: 10px 0 30px 0;
+.image {
+    position: relative;
+    text-align: center;
+}
 
-    & p {
-        padding: 20px;
-        font-family: $logo-font, sans-serif;
-    }
-
-    & a {
-        padding-left: 20px;
-        line-height: $line-height;
-        font-size: $small-font;
-
-        & i {
-            width: 11px;
-            height: 13px;
-        }
-    }
+.float {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: $tertiary-color;
+    @include flex-center;
+    top: 15px;
+    right: 15px;
+    color: darken($tertiary-color, 40%)
 }
