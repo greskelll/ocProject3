@@ -1,0 +1,29 @@
+footer {
+    width: $full-width;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    color: $inverted-police;
+    padding: 10px 0 30px 0;
+
+    & p {
+        padding: 20px;
+        font-family: $logo-font, sans-serif;
+    }
+
+    & a {
+        padding-left: 20px;
+        line-height: $line-height;
+        font-size: $small-font;
+
+        & i {
+            width: 11px;
+            height: 13px;
+        }
+    }
+}
+
+h1 {
+    font-family: $logo-font, sans-serif;
+    margin: 10px;
+}
