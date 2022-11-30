@@ -9,7 +9,7 @@ body {
     margin: auto;
     flex-direction: column;
     font-family: $regular-font, sans-serif;
-    @include flex-center
+    @include flex-center;
 }
 
 
@@ -230,4 +230,38 @@ main {
     transform: scale(0);
     transition: 2000ms;
     transform-origin: bottom;
+}
+
+.loader {
+    border: 10px solid $tertiary-color;
+    border-top: 10px solid $primary-color;
+    border-bottom: 10px solid $secondary-color;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation: spin 1.5s linear 0s forwards;
+    z-index: 2;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
 }

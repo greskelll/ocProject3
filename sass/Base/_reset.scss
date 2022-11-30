@@ -8,3 +8,26 @@ a,
 link {
     text-decoration: none;
 }
+
+.testies {
+    width: 100%;
+    animation: loading 1.5s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0.02;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
