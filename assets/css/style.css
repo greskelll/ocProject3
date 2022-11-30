@@ -88,17 +88,16 @@ nav {
   height: 50px;
   padding: 0 20px;
   margin: 30px;
-  transition: transform 500ms;
   position: relative;
   z-index: 1;
 }
-.button:hover .button__bg {
+.button:hover .button__background {
   opacity: 1;
 }
 .button a {
   color: #FFFFFF;
 }
-.button__bg {
+.button__background {
   border-radius: 25px;
   box-shadow: 0px 5px 10px #aaaaaa;
   position: absolute;
@@ -197,10 +196,6 @@ main {
 .restaurants__card__informations p {
   font-weight: 300;
 }
-.restaurants__card__informations i {
-  font-size: 150%;
-  color: #dddddd;
-}
 
 .image {
   position: relative;
@@ -218,4 +213,30 @@ main {
   top: 15px;
   right: 15px;
   color: #278870;
+}
+
+.like {
+  font-size: 150%;
+  position: relative;
+  z-index: 1;
+}
+.like:hover .like__fill {
+  transform: scale(0.9);
+}
+
+.like__fill {
+  display: inline;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to bottom, #9356DC, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 0;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 2000ms;
+  transform-origin: bottom;
 }/*# sourceMappingURL=style.css.map */

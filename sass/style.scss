@@ -45,12 +45,11 @@ nav {
     height: 50px;
     padding: 0 20px;
     margin: 30px;
-    transition: transform 500ms;
     position: relative;
     z-index: 1;
 
     &:hover {
-        & .button__bg {
+        & .button__background {
             opacity: 1;
         }
     }
@@ -59,7 +58,7 @@ nav {
         color: $inverted-police ;
     }
 
-    &__bg {
+    &__background {
         border-radius: 25px;
         box-shadow: 0px 5px 10px darken($grey, 30%);
         position: absolute;
@@ -156,10 +155,7 @@ main {
                 font-weight: $small-weight;
             }
 
-            & i {
-                font-size: 150%;
-                color: darken($grey, 10%);
-            }
+
         }
     }
 }
@@ -179,4 +175,33 @@ main {
         right: 15px;
         color: darken($tertiary-color, 40%)
     }
+}
+
+.like {
+    font-size: 150%;
+
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        & .like__fill {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.like__fill {
+    display: inline;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 2000ms;
+    transform-origin: bottom;
 }
