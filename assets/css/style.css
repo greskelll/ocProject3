@@ -11,24 +11,32 @@ link {
 
 footer {
   width: 100%;
+}
+
+.foot {
+  width: 100%;
   background-color: #353535;
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
   padding: 10px 0 30px 0;
 }
-footer p {
+.foot--small {
+  font-weight: 300;
+}
+.foot p {
   padding: 20px;
   font-family: "Shrikhand", sans-serif;
 }
-footer a {
+.foot a {
   padding-left: 20px;
-  line-height: 19px;
+  margin: 4px 0;
   font-size: 16px;
 }
-footer a i {
+.foot a i {
   width: 11px;
   height: 13px;
+  margin-right: 18px;
 }
 
 h1 {
@@ -52,6 +60,10 @@ h2 {
 }
 
 nav {
+  width: 100%;
+}
+
+.navigation {
   padding: 25px;
   width: 100%;
   background-color: #F6F6F6;
@@ -61,11 +73,14 @@ nav {
   flex-direction: column;
   text-align: center;
 }
+.navigation p {
+  font-weight: 300;
+}
 
 .button {
   border: 0px solid black;
   border-radius: 25px;
-  box-shadow: 0px 5px 10px #c3c3c3;
+  box-shadow: 0px 5px 10px #dddddd;
   background: linear-gradient(-10deg, #9356DC, #ff79da);
   color: #FFFFFF;
   display: flex;
@@ -98,7 +113,7 @@ nav {
   align-items: center;
   border: 0px solid black;
   border-radius: 25px;
-  box-shadow: 0px 5px 10px #c3c3c3;
+  box-shadow: 0px 5px 10px #dddddd;
   background: #F6F6F6;
   height: 72px;
   padding: 0 30px;
@@ -136,11 +151,12 @@ main {
   min-width: 300px;
   width: 90%;
   max-width: 335px;
+  margin: 30px auto;
 }
 .restaurants__card {
   border: 0px solid black;
   border-radius: 25px;
-  box-shadow: 0px 5px 10px #c3c3c3;
+  box-shadow: 0px 5px 10px #dddddd;
   margin: 20px 0;
   width: 100%;
 }
@@ -156,6 +172,9 @@ main {
   padding: 0 25px;
   height: 70px;
 }
+.restaurants__card__informations p {
+  font-weight: 300;
+}
 .restaurants__card__informations i {
   font-size: 150%;
   color: #dddddd;
@@ -165,11 +184,11 @@ main {
   position: relative;
   text-align: center;
 }
-
-.float {
+.image__float {
   position: absolute;
-  width: 100px;
-  height: 30px;
+  width: 87px;
+  height: 35px;
+  border-radius: 3px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
