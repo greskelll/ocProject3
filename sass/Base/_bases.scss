@@ -1,0 +1,20 @@
+body {
+    max-width: 762px;
+    margin: auto;
+    flex-direction: column;
+    font-family: $regular-font, sans-serif;
+    @include flex-center;
+}
+
+h2 {
+    font-weight: $bold-weight;
+    font-size: $large-font;
+}
+
+main {
+    background-color: $grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
