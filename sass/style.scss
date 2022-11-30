@@ -20,12 +20,20 @@ h2 {
 }
 
 nav {
+    width: $full-width;
+}
+
+.navigation {
     padding: 25px;
     width: 100%;
     background-color: $grey;
     @include flex-center;
     flex-direction: column;
     text-align: center;
+
+    & p {
+        font-weight: $small-weight;
+    }
 }
 
 .button {
@@ -96,6 +104,7 @@ main {
     min-width: 300px;
     width: 90%;
     max-width: 335px;
+    margin: 30px auto;
 
     &__card {
         @include rounded-with-shadow;
@@ -115,6 +124,10 @@ main {
             padding: 0 25px;
             height: 70px;
 
+            & p {
+                font-weight: $small-weight;
+            }
+
             & i {
                 font-size: 150%;
                 color: darken($grey, 10%);
@@ -126,15 +139,16 @@ main {
 .image {
     position: relative;
     text-align: center;
-}
 
-.float {
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    background-color: $tertiary-color;
-    @include flex-center;
-    top: 15px;
-    right: 15px;
-    color: darken($tertiary-color, 40%)
+    &__float {
+        position: absolute;
+        width: 87px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: $tertiary-color;
+        @include flex-center;
+        top: 15px;
+        right: 15px;
+        color: darken($tertiary-color, 40%)
+    }
 }
