@@ -77,39 +77,6 @@ h1 {
   margin: 10px;
 }
 
-body {
-  max-width: 762px;
-  margin: auto;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-nav {
-  width: 100%;
-}
-
-.navigation {
-  padding: 25px;
-  width: 100%;
-  background-color: #F6F6F6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.navigation p {
-  font-weight: 300;
-}
-
 .button {
   border: 0px solid black;
   border-radius: 25px;
@@ -142,6 +109,65 @@ nav {
   z-index: -1;
   background: linear-gradient(-10deg, #a16be0, #ff93e1);
   transition: opacity 400ms;
+}
+
+.like {
+  font-size: 150%;
+  position: relative;
+  z-index: 1;
+}
+.like:hover .like__fill {
+  transform: scale(0.9);
+}
+
+.like__fill {
+  display: inline;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(to bottom, #9356DC, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 0;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 2000ms;
+  transform-origin: bottom;
+}
+
+body {
+  max-width: 762px;
+  margin: auto;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav {
+  width: 100%;
+}
+
+.navigation {
+  padding: 25px;
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.navigation p {
+  font-weight: 300;
 }
 
 .location {
@@ -317,9 +343,11 @@ main {
   0% {
     transform: rotate(0deg);
     opacity: 1;
+    scale: 1;
   }
   99% {
     opacity: 1;
+    scale: 3;
   }
   100% {
     transform: rotate(360deg);
@@ -331,9 +359,11 @@ main {
   0% {
     transform: rotate(0deg);
     opacity: 1;
+    scale: 1;
   }
   99% {
     opacity: 1;
+    scale: 3;
   }
   100% {
     transform: rotate(360deg);
