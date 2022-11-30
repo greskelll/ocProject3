@@ -139,6 +139,14 @@ nav {
   height: 72px;
   padding: 0 30px;
   margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+.functionning__card:hover i {
+  color: #9356DC;
+}
+.functionning__card:hover .functionning__card__background {
+  opacity: 0.1;
 }
 .functionning__card__number {
   position: relative;
@@ -158,6 +166,19 @@ nav {
   font-size: 16px;
   font-weight: 500;
   min-width: 85%;
+}
+.functionning__card__background {
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #aaaaaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background: #9356DC;
+  transition: opacity 400ms;
 }
 
 main {
