@@ -88,6 +88,28 @@ nav {
   height: 50px;
   padding: 0 20px;
   margin: 30px;
+  transition: transform 500ms;
+  position: relative;
+  z-index: 1;
+}
+.button:hover .button__bg {
+  opacity: 1;
+}
+.button a {
+  color: #FFFFFF;
+}
+.button__bg {
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #aaaaaa;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background: linear-gradient(-10deg, #a16be0, #ff93e1);
+  transition: opacity 400ms;
 }
 
 .location {
