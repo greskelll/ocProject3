@@ -4,6 +4,10 @@ body {
     flex-direction: column;
     font-family: $regular-font, sans-serif;
     @include flex-center;
+
+    @media (min-width:762px) {
+        max-width: 100%;
+    }
 }
 
 h2 {

@@ -30,6 +30,19 @@ nav {
     max-width: 335px;
     margin: 40px 0;
 
+    @media (min-width:762px) {
+        max-width: 1400px;
+    }
+
+    &--display {
+        @media (min-width:762px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
     &__card {
         @include flex-center;
         @include rounded-with-shadow;
@@ -91,6 +104,17 @@ nav {
     width: 90%;
     max-width: 335px;
     margin: 30px auto;
+
+    @media (min-width:762px) {
+        max-width: 1400px;
+    }
+
+    &--display {
+        @media (min-width:762px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
     &__card {
         @include rounded-with-shadow;

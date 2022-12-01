@@ -10,6 +10,24 @@ footer {
     color: $inverted-police;
     padding: 10px 0 30px 0;
 
+    @media (min-width:762px) {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &--display {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width:762px) {
+
+            flex-direction: row;
+        }
+    }
+
     &--small {
         font-weight: $small-weight;
     }
@@ -58,15 +76,14 @@ h1 {
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg), ;
+        transform: rotate(0deg) scale(1);
         opacity: 1;
-        scale: 1;
     }
 
 
     99% {
+        transform: scale(3);
         opacity: 1;
-        scale: 3;
     }
 
     100% {
