@@ -17,6 +17,8 @@ link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background: white;
 }
 
 @-webkit-keyframes loading {
@@ -59,8 +61,6 @@ footer {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
   }
 }
 .foot--display {
@@ -300,6 +300,11 @@ nav {
   margin: 20px 0;
   width: 100%;
 }
+@media (min-width: 762px) {
+  .restaurants__card {
+    margin-right: 50px;
+  }
+}
 .restaurants__card img {
   border-radius: 25px 25px 0 0;
   width: 100%;
@@ -368,11 +373,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #353535;
 }
 @media (min-width: 762px) {
   body {
     max-width: 100%;
   }
+}
+
+header {
+  width: 100%;
+  background: white;
+  text-align: center;
 }
 
 h2 {
