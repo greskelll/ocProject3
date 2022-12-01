@@ -121,6 +121,10 @@ nav {
         margin: 20px 0;
         width: 100%;
 
+        @media (min-width:762px) {
+            margin-right: 50px;
+        }
+
         & img {
             border-radius: 25px 25px 0 0;
             width: 100%;

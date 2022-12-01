@@ -4,10 +4,17 @@ body {
     flex-direction: column;
     font-family: $regular-font, sans-serif;
     @include flex-center;
+    background: #353535;
 
     @media (min-width:762px) {
         max-width: 100%;
     }
+}
+
+header {
+    width: 100%;
+    background: white;
+    text-align: center;
 }
 
 h2 {
