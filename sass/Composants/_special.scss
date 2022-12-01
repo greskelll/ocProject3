@@ -1,0 +1,45 @@
+.image {
+    position: relative;
+    text-align: center;
+
+    &__float {
+        position: absolute;
+        width: 87px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: $tertiary-color;
+        @include flex-center;
+        top: 15px;
+        right: 15px;
+        color: darken($tertiary-color, 40%)
+    }
+}
+
+.like {
+    font-size: 150%;
+
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        & .like__fill {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.like__fill {
+    display: inline;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 400ms;
+    transform-origin: bottom;
+}
