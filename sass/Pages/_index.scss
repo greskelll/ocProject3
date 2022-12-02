@@ -10,6 +10,13 @@ nav {
     flex-direction: column;
     text-align: center;
 
+    & h2 {
+        @media(min-width:762px) {
+            font-size: 40px;
+            margin: 20px;
+        }
+    }
+
     & p {
         font-weight: $small-weight;
     }
@@ -119,7 +126,7 @@ nav {
     &__card {
         @include rounded-with-shadow;
         margin: 20px 0;
-        width: 100%;
+        min-width: 335px;
 
         @media (min-width:762px) {
             margin-right: 50px;

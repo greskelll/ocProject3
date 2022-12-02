@@ -6,40 +6,4 @@
 @import 'Pages/index';
 @import 'Composants/special';
 @import 'Base/bases';
-
-/*
-@media (min-width:762px) {
-
-    body {
-        min-width: 100%;
-    }
-
-    .functionning {
-        max-width: 1400px;
-
-        &--display {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        &__card {
-            margin: 35px;
-            min-width: 30%;
-
-            & h3,
-            i {
-                text-align: center;
-            }
-        }
-    }
-
-    .restaurants {
-        min-width: 100%;
-
-        &--display {
-            flex-direction: column;
-        }
-    }
-}
-*/
+@import 'Layout/loader';

@@ -33,12 +33,20 @@ footer {
     & p {
         padding: 20px;
         font-family: $logo-font, sans-serif;
+
+        @media (min-width:762px) {
+            margin: 15px;
+        }
     }
 
     & a {
         padding-left: 20px;
         margin: 4px 0;
         font-size: $small-font;
+
+        @media (min-width:762px) {
+            margin-right: 15px;
+        }
 
         & i {
             width: 11px;
@@ -52,6 +60,10 @@ footer {
 h1 {
     font-family: $logo-font, sans-serif;
     margin: 10px;
+
+    @media (min-width:762px) {
+        font-size: 37px;
+    }
 }
 
 .loader {
@@ -78,6 +90,9 @@ h1 {
         opacity: 1;
     }
 
+    50% {
+        transform: rotate(180deg);
+    }
 
     99% {
         transform: scale(3);
