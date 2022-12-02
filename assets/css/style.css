@@ -293,7 +293,6 @@ nav {
 .restaurants {
   min-width: 300px;
   width: 90%;
-  max-width: 335px;
   margin: 30px auto;
 }
 @media (min-width: 768px) {
@@ -305,6 +304,8 @@ nav {
   .restaurants--display {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 .restaurants__card {
@@ -312,16 +313,16 @@ nav {
   border-radius: 25px;
   box-shadow: 0px 5px 10px #dddddd;
   margin: 20px 0;
-  min-width: 335px;
+  width: 335px;
 }
 @media (min-width: 1024px) {
   .restaurants__card {
-    margin-right: 50px;
+    width: 24%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .restaurants__card {
-    margin-right: 30px;
+    width: 45%;
   }
 }
 .restaurants__card img {
@@ -417,7 +418,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: scroll;
 }
 
 .page {

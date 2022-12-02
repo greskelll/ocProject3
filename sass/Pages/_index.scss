@@ -124,31 +124,34 @@ nav {
 .restaurants {
     min-width: 300px;
     width: 90%;
-    max-width: 335px;
     margin: 30px auto;
 
     @media (min-width:768px) {
         max-width: 1400px;
+
     }
 
     &--display {
         @media (min-width:768px) {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
         }
     }
 
     &__card {
         @include rounded-with-shadow;
         margin: 20px 0;
-        min-width: 335px;
+        width: 335px;
 
         @media (min-width:1024px) {
-            margin-right: 50px;
+            width: 24%;
         }
 
         @media (min-width:768px) and (max-width:1024px) {
-            margin-right: 30px;
+            width: 45%;
         }
 
         & img {
