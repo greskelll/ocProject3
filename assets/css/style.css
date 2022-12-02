@@ -245,6 +245,12 @@ nav {
     margin: 10px;
   }
 }
+@media (min-width: 1024px) {
+  .functionning__card {
+    width: 30%;
+    max-width: 350px;
+  }
+}
 .functionning__card:hover i {
   color: #9356DC;
 }
