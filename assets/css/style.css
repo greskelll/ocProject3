@@ -245,6 +245,12 @@ nav {
     margin: 10px;
   }
 }
+@media (min-width: 1024px) {
+  .functionning__card {
+    width: 30%;
+    max-width: 350px;
+  }
+}
 .functionning__card:hover i {
   color: #9356DC;
 }
@@ -448,4 +454,13 @@ main {
   100% {
     opacity: 1;
   }
+}
+.header__restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.header__restaurant h1 {
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */
