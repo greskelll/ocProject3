@@ -31,7 +31,7 @@
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                 <div class="button">
-                    <a href="#">Explorer nos restaurants</a>
+                    <a href="#restaurant">Explorer nos restaurants</a>
                     <div class="button__background"></div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <main>
+        <main id="restaurant">
             <section class="restaurants">
                 <h2>Restaurants</h2>
                 <div class="restaurants--display">
@@ -96,28 +96,35 @@
                         </div>
                     </div>
                     <div class="restaurants__card">
-                        <img src="assets/images/ALaFrancaise.png" alt="A la française: des plats typiques">
+                        <div class="image">
+                            <img src="assets/images/ALaFrancaise.png" alt="A la française: des plats typiques">
+                            <!--<p class="image__float">Nouveau</p>-->
+                        </div>
                         <div class="restaurants__card__informations">
                             <div>
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
                             </div>
                             <div class="like">
                                 <i class="fa-regular fa-heart"></i>
-                                <div class="like__fill"></div>
+                                <i class="like__fill fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </div>
                     <div class="restaurants__card">
-                        <img src="assets/images/LeDeliceDesSens.png" alt="Le décile des sens: réveillez vos papilles">
+                        <div class="image">
+                            <img src="assets/images/LeDeliceDesSens.png"
+                                alt="Le décile des sens: réveillez vos papilles">
+                            <!--<p class="image__float">Nouveau</p>-->
+                        </div>
                         <div class="restaurants__card__informations">
                             <div>
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
                             </div>
                             <div class="like">
                                 <i class="fa-regular fa-heart"></i>
-                                <div class="like__fill"></div>
+                                <i class="like__fill fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </div>
@@ -128,10 +135,10 @@
             <div class="foot">
                 <p>ohmyfood</p>
                 <div class="foot--display">
-                    <a><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                    <a><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                    <a class="foot--small">Mentions légales</a>
-                    <a class="foot--small">Contact</a>
+                    <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a href="#" class="foot--small">Mentions légales</a>
+                    <a href="#" class="foot--small">Contact</a>
                 </div>
             </div>
         </footer>

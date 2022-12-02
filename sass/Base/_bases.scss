@@ -1,12 +1,12 @@
 body {
-    max-width: 762px;
+    max-width: 1024px;
     margin: auto;
     flex-direction: column;
     font-family: $regular-font, sans-serif;
     @include flex-center;
     background: #353535;
 
-    @media (min-width:762px) {
+    @media (min-width:1024px) {
         max-width: 100%;
     }
 }
