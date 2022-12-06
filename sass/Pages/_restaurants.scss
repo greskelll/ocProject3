@@ -80,27 +80,27 @@
         margin: 15px 0;
         width: 100%;
         height: 68px;
-        transform: scale(0);
         animation: loadingbis 1s both ease-in-out;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+
+        &:hover>.menu__item--validated i {
+            transform: translate(-50px);
+
+        }
+
+        &:hover>.menu__item--validated p {
+            transform: translate(-50px);
+            margin-left: 60px;
+        }
 
         &__name {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-
-        &:hover i {
-            animation: selected 0.5s ease-in-out forwards, left 0.5s ease-in-out forwards;
-        }
-
-        &:hover .menu__item--validated p {
-            animation: left 0.5s ease-in-out forwards;
-            margin-left: 60px;
-        }
-
 
         & p {
             font-weight: $small-weight;
@@ -122,10 +122,11 @@
         &--validated {
 
 
+
             & p {
                 font-weight: $regular-weight;
                 margin-left: 10px;
-                transition: margin-left 0.2s;
+                transition: all 0.5s;
             }
 
             display: flex;
@@ -133,8 +134,9 @@
             align-items: flex-end;
 
 
+
             & i {
-                transform: scale(0);
+
                 background-color: $tertiary-color;
                 color: white;
                 height: 100%;
@@ -142,12 +144,13 @@
                 box-sizing: content-box;
                 position: absolute;
                 right: -50px;
+                transform: translate(0px);
                 border-radius: 0 15px 15px 0;
                 align-items: center;
                 display: flex;
                 justify-content: center;
                 bottom: 0;
-
+                transition: all 0.5s;
 
             }
         }
@@ -191,8 +194,8 @@
 @keyframes left {
     0% {
         transform: translate(0);
-
     }
+
 
     100% {
         transform: translate(-50px);

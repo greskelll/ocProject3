@@ -540,26 +540,23 @@ main {
   margin: 15px 0;
   width: 100%;
   height: 68px;
-  transform: scale(0);
   -webkit-animation: loadingbis 1s both ease-in-out;
           animation: loadingbis 1s both ease-in-out;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__item:hover > .menu__item--validated i {
+  transform: translate(-50px);
+}
+.menu__item:hover > .menu__item--validated p {
+  transform: translate(-50px);
+  margin-left: 60px;
+}
 .menu__item__name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.menu__item:hover i {
-  -webkit-animation: selected 0.5s ease-in-out forwards, left 0.5s ease-in-out forwards;
-          animation: selected 0.5s ease-in-out forwards, left 0.5s ease-in-out forwards;
-}
-.menu__item:hover .menu__item--validated p {
-  -webkit-animation: left 0.5s ease-in-out forwards;
-          animation: left 0.5s ease-in-out forwards;
-  margin-left: 60px;
 }
 .menu__item p {
   font-weight: 300;
@@ -582,10 +579,9 @@ main {
 .menu__item--validated p {
   font-weight: 500;
   margin-left: 10px;
-  transition: margin-left 0.2s;
+  transition: all 0.5s;
 }
 .menu__item--validated i {
-  transform: scale(0);
   background-color: #99E2D0;
   color: white;
   height: 100%;
@@ -593,11 +589,13 @@ main {
   box-sizing: content-box;
   position: absolute;
   right: -50px;
+  transform: translate(0px);
   border-radius: 0 15px 15px 0;
   align-items: center;
   display: flex;
   justify-content: center;
   bottom: 0;
+  transition: all 0.5s;
 }
 
 .menu:nth-child(1) {
