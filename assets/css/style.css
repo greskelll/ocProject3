@@ -582,7 +582,7 @@ main {
 .menu__item--validated p {
   font-weight: 500;
   margin-left: 10px;
-  transition: margin-left 0.3s;
+  transition: margin-left 0.2s;
 }
 .menu__item--validated i {
   transform: scale(0);
