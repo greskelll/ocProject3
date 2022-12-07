@@ -96,6 +96,11 @@ nav {
             min-width: 15%;
             font-size: 120%;
             color: darken($grey, 40%);
+
+            @media(min-width:768px) and (max-width:1024px) {
+                margin-right: 10px;
+                margin-left: -10px;
+            }
         }
 
         & h3 {
