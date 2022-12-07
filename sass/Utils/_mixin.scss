@@ -16,3 +16,9 @@
     padding: 4px 9px;
     background: $primary-color;
 }
+
+@mixin background-photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
