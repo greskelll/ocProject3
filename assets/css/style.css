@@ -32,6 +32,7 @@ footer {
   flex-direction: column;
   color: #FFFFFF;
   padding: 10px 0 30px 0;
+  box-shadow: 0 50vh 0 50vh #353535;
 }
 @media (min-width: 768px) {
   .foot {
@@ -396,13 +397,13 @@ nav {
 
 body {
   max-width: 1024px;
+  height: 100%;
   margin: auto;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #353535;
 }
 @media (min-width: 1024px) {
   body {
@@ -478,6 +479,11 @@ main {
   width: 100%;
   height: 275px;
 }
+@media (min-width: 1024px) {
+  .plats {
+    height: 420px;
+  }
+}
 .plats__photo--palette {
   background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
@@ -504,11 +510,20 @@ main {
 }
 
 .restaurant__menu {
-  background-color: #F7F7F7;
+  background-color: #F6F6F6;
   border-radius: 25px 25px 0 0;
   padding-top: 30px;
   margin-top: -50px;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .restaurant__menu {
+    width: 60%;
+    max-width: 1055px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .restaurant__menu__header {
   display: flex;
@@ -518,9 +533,19 @@ main {
   width: 90%;
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  .restaurant__menu__header {
+    justify-content: center;
+  }
+}
 .restaurant__menu__header h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
+}
+@media (min-width: 1024px) {
+  .restaurant__menu__header h2 {
+    margin-right: 30px;
+  }
 }
 
 .menu {
@@ -530,8 +555,22 @@ main {
   -webkit-animation: loadingbis 1s both ease-in-out;
           animation: loadingbis 1s both ease-in-out;
 }
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 632px;
+  }
+}
 .menu__title {
   position: relative;
+}
+@media (min-width: 1024px) {
+  .menu__title {
+    align-self: flex-start;
+  }
 }
 .menu__title h3 {
   font-weight: 300;
@@ -565,6 +604,11 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 1024px) {
+  .menu__item {
+    max-width: 632px;
+  }
 }
 .menu__item:hover > .menu__item--validated i {
   transform: translate(-50px);
