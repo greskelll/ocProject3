@@ -1,10 +1,10 @@
 body {
     max-width: 1024px;
+    height: 100%;
     margin: auto;
     flex-direction: column;
     font-family: $regular-font, sans-serif;
     @include flex-center;
-    background: #353535;
 
     @media (min-width:1024px) {
         max-width: 100%;
