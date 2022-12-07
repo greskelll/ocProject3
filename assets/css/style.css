@@ -281,6 +281,12 @@ nav {
   font-size: 120%;
   color: #909090;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .functionning__card i {
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+}
 .functionning__card h3 {
   font-size: 16px;
   font-weight: 500;
@@ -533,7 +539,7 @@ main {
   width: 90%;
   margin-bottom: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .restaurant__menu__header {
     justify-content: center;
   }
@@ -542,7 +548,7 @@ main {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .restaurant__menu__header h2 {
     margin-right: 30px;
   }
@@ -552,25 +558,17 @@ main {
   width: 90%;
   margin: 15px auto;
   transform: scale(0);
-  -webkit-animation: loadingbis 1s both ease-in-out;
-          animation: loadingbis 1s both ease-in-out;
+  -webkit-animation: loadingbis 0.6s both ease-in-out;
+          animation: loadingbis 0.6s both ease-in-out;
+  transform-origin: top left;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     max-width: 632px;
   }
 }
 .menu__title {
   position: relative;
-}
-@media (min-width: 1024px) {
-  .menu__title {
-    align-self: flex-start;
-  }
 }
 .menu__title h3 {
   font-weight: 300;
@@ -599,8 +597,9 @@ main {
   margin: 15px 0;
   width: 100%;
   height: 68px;
-  -webkit-animation: loadingbis 1s both ease-in-out;
-          animation: loadingbis 1s both ease-in-out;
+  -webkit-animation: loadingbis 0.6s both ease-out;
+          animation: loadingbis 0.6s both ease-out;
+  transform-origin: top right;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -651,6 +650,7 @@ main {
   color: white;
   height: 100%;
   width: 50px;
+  font-size: 125%;
   box-sizing: content-box;
   position: absolute;
   right: -50px;
