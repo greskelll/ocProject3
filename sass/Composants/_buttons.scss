@@ -1,10 +1,8 @@
 .button {
     @include rounded-with-shadow;
+    @include flex-center;
     background: linear-gradient(-10deg, $primary-color, $secondary-color);
     color: $inverted-police;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 50px;
     min-width: 186px;
     padding: 0 20px;
