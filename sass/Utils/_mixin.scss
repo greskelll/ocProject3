@@ -22,3 +22,9 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
